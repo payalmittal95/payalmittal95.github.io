@@ -2,28 +2,28 @@
 <head>
   <title>Payal Mittal</title>
   <style>
-    body {
-      text-align: center;
-      background: url("http://dash.ga.co/assets/anna-bg.png");
+    .navbar {
+      margin-bottom: 0px !important;
+      padding: 12px !important;
+      background-color: #FFB000!important;
+      border: 0 !important;
+      border-radius: 0 !important;  
+      text-align: right;
+      font-family: helvetica;
+    }
+    .main-info {
+      background: url("http://dash.ga.co/assets/anna-bg.png") no-repeat center center fixed;
       background-size: cover;
       background-position: center;
       color: white;
       font-family: helvetica;
+      align-items: center;
+      text-align: center;
     }
-
     p {
       font-size: 22px;
     }
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: red;
-      color: white;
-    }
-    .home-img{
+    .circle-img{
       border-radius: 100%;
       width: 10;
       height: 10;
@@ -51,30 +51,57 @@
       display: inline;
     }
     .underline {
-    border-bottom: 1px solid #ffb000;
+      border-bottom: 1px solid #ffb000;
     }
     .text-center {
-    text-align: center;
-}
-.about .row {
-    margin: 20px 0px;
-    
-}
-.about .col-md-5 {
-    padding: 0px;
-}
-  </style>
+      text-align: center;
+    }
+    .about .row {
+      margin: 20px 0px;
+    }
+    .bio {
+      padding: 25px;
+      margin-left: 420px;
+      margin-right: 50px;
+      box-shadow: 5px 5px 5px 0px rgba(205,200,205,1);
+    }
+    p {
+      font: helvetica;
+    }
+    .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .portfolio .col-md-3 {
+    padding: 15px;
+  }
+  .card {
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(135,130, 135,1);
+  }
+  .about, .portfolio, .contact {
+    color: black;
+    margin-bottom: 80px;
+  }
+  .portfolio {
+    margin: 30px 0px;
+    background-color: #ffb000;
+  }
+</style>
 </head>
+  
   <header>
     <nav class="navbar">
       <ul class="navbar-list">
-        <li>  <a href="About.html"> About     </a></li>
-        <li>  <a href="Contact.html"> Contact   </a></li>
-        <li>  <a href="Portfolio.html"> Portfolio </a></li>
+        <li>  <a href="#about"> About     </a></li>
+        <li>  <a href="#contact"> Contact   </a></li>
+        <li>  <a href="#portfolio"> Portfolio </a></li>
       </ul>
   </header>
 <section class="main-info" id="main-info">
-  <img class="home-img" src="C:\Users\lenovo\Desktop\Python\payalmittal95.github.io\dp.jpg">
+  <img class="circle-img" src="C:\Users\lenovo\Desktop\Python\payalmittal95.github.io\dp.jpg">
   <h1>Hi! I'm Payal</h1>
   <h3>A confident, fun loving software engineer.</h3>
   <div class="social-icons">
@@ -83,16 +110,20 @@
     <a target="_blank" href="https://www.linkedin.com/in/payal-mittal-b477ab137/"><img src="https://www.facebook.com/payal.shawty"><img src="C:\Users\lenovo\Desktop\Python\payalmittal95.github.io\linkedin.png"></a>
   </div>
 </section>
+
+<br>
+
 <section class="about" id="about">
+  <div class="container">
   <h2 class="text-center">  A<span class="underline">bou</span>t   </h2>
   <br>
   <div class="row">
     <div class="col-md-5">
-      <img src="C:\Users\lenovo\Desktop\Python\payalmittal95.github.io\me-about.jpg" style="float:left;width:400px;height:400px;>
+      <img src="C:\Users\lenovo\Desktop\Python\payalmittal95.github.io\me-about.jpg" style="float:left;width:300px;height:400px; margin-left: 100px;>
     </div>
     <div class="col-md-7">
-      <div class="bio">
-        <div class="bio">
+      <div class="bio" >
+        
               <p>
                 Hello!
               </p>
@@ -106,15 +137,48 @@
                 I enjoy arts and doing DIY projects to make things using my art and crafts skills
               </p>
               <p>
-                I have been the anchor for the fresher's party in DIT University in 2015. I also worked as a part of the discipline commitee. 
-                I have played badminton for my school in 2013.
-              </p>
-              <p>
                 I trained with Acadview, a start up to train students in coding languages. I'm currently looking for a winter internship for the year 2017.
               </p>
-            </div>
+            
       </div>
       
+    </div>
+  </div>
+  </div>
+</section>
+<br>
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <h2 class="text-center">  P<span class="underline">ortfoli</span>o   </h2>
+    <div class="col-md-3">
+      <div class="card">
+        <div><img src="C:\Users\lenovo\Desktop\Python\payalmittal95.github.io\spy-chat.jpg"></div>
+        <h3>Spy Chat</h3>
+        <p style="margin: 0 50 0 200">
+          It is a terminal chat app using python that allows you to send and secret messages hidden safely inside an image. The chat app will not be using a database or any other form of persistent data storage and will rely on the computer's non-persistent memory.
+        </p>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div><img src="C:\Users\lenovo\Desktop\Python\payalmittal95.github.io\photo-bot.jpg"></div>
+        <h3>Photo Bot</h3>
+        <p class="portfolio-para">
+          Discover images of disaster hit areas for natural calamities such as floods or earthquakes using geo-fencing technique using Instagram data
+        </p>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div><img src="C:\Users\lenovo\Desktop\Python\payalmittal95.github.io\smart-blog.jpg"></div>
+        <h3>Smart Blog</h3>
+        <p ">
+          A smart photo blog which can be used to share pictures. The blog can categorize images according to their caption.
+        </p>
+        <br>
+      </div>
     </div>
   </div>
 </section>
